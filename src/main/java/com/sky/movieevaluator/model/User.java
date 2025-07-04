@@ -27,7 +27,6 @@ public class User {
     private String password;
 
     @Builder.Default
-//    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "role")
     private List<String> roles = List.of("ROLE_USER");
