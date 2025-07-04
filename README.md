@@ -1,6 +1,6 @@
 # 🎬 MovieEvaluator
 
-A Spring Boot REST API for rating movies. Includes JWT-based authentication, integration tests, Docker Compose setup with PostgreSQL, Prometheus & Grafana for monitoring.
+A Spring Boot REST API for rating movies. Includes JWT-based authentication, integration tests, Docker Compose setup with H2, Prometheus & Grafana for monitoring.
 
 ---
 
@@ -65,7 +65,7 @@ Docker Compose file includes:
 The authentication and authorization mechanism using JWT was implemented based on best practices outlined in a Medium article, adapted to fit the project’s architecture.
 
 - Dockerization & Monitoring
-The entire stack is containerized using Docker Compose. It includes the Spring Boot application, PostgreSQL, Prometheus, and Grafana.
+The entire stack is containerized using Docker Compose. It includes the Spring Boot application, H2, Prometheus, and Grafana.
 JVM metrics are exposed via Micrometer and integrated into Grafana dashboards through Prometheus. These metrics are accessible and visible after starting the stack.
 
 - Testing Approach
