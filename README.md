@@ -59,3 +59,18 @@ Docker Compose file includes:
 - H2 database
 - Prometheus
 - Grafana
+
+# 📝 Notes from the Developer
+- JWT Implementation
+The authentication and authorization mechanism using JWT was implemented based on best practices outlined in a Medium article, adapted to fit the project’s architecture.
+
+- Dockerization & Monitoring
+The entire stack is containerized using Docker Compose. It includes the Spring Boot application, PostgreSQL, Prometheus, and Grafana.
+JVM metrics are exposed via Micrometer and integrated into Grafana dashboards through Prometheus. These metrics are accessible and visible after starting the stack.
+
+- Testing Approach
+The project contains focused unit tests covering essential business logic, along with an integration test validating JWT token generation and authentication flow. Due to time constraints, the test suite is not exhaustive.
+
+- API Documentation
+Swagger UI is enabled for easier exploration and testing of REST endpoints. You can access it at:
+http://localhost:8080/swagger-ui/index.html
